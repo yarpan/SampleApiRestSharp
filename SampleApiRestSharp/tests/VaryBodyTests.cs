@@ -9,7 +9,6 @@ namespace SampleApiRestSharp
     public class VaryBodyTests : BaseTests
     {
 
-
         [Test]
         public void PostBodyStringTest()
         {
@@ -30,7 +29,6 @@ namespace SampleApiRestSharp
 
             Console.WriteLine(response.StatusCode.ToString() + "                " + response.Content.ToString());
 
-
         }
 
 
@@ -49,8 +47,6 @@ namespace SampleApiRestSharp
             //                 """;
 
         }
-
-
 
 
 
