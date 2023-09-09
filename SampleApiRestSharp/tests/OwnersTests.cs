@@ -4,15 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace SampleApiRestSharp
 {
-    internal class Program
+    internal class OwnersTests
     {
-        static void Main(string[] args)
-        {
 
 
 
-        }
+
+
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SampleApiRestSharp
 {
-    internal class PostBody
+    public class OwnerDto
     {
         public string firstName { get; set; }
         public string lastName { get; set; }

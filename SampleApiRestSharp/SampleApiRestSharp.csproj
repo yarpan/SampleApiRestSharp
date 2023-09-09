@@ -83,16 +83,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Demo.cs" />
-    <Compile Include="ListOfUsersDTO.cs" />
-    <Compile Include="PostBody.cs" />
+    <Compile Include="models\GitHubUser.cs" />
+    <Compile Include="models\GitHubUserProp.cs" />
+    <Compile Include="models\OwnerDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SmokeTests.cs" />
-    <Compile Include="TestNUnit.cs" />
+    <Compile Include="tests\GitHubTest.cs" />
+    <Compile Include="tests\OwnersTests.cs" />
+    <Compile Include="tests\SmokeTests.cs" />
+    <Compile Include="tests\SpecTest.cs" />
+    <Compile Include="tests\BaseTests.cs" />
+    <Compile Include="tests\VaryBodyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

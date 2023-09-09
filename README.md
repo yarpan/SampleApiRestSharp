@@ -5,5 +5,5 @@
 
 **STATUS:** In Progres ...
 
-**STACK:** .NET, C#, RestSharp, NUnit
+**STACK:** .NET, C#, RestSharp, NUnit, Newtonsoft.Json, FluentAssertions
 

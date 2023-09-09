@@ -1,14 +1,10 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace SampleApiRestSharp
 {
     [TestFixture]
-    public class SuccessTests
+    public class BaseTests
     {
         [SetUp]
         public void Init()
@@ -21,5 +17,7 @@ namespace SampleApiRestSharp
         [Test]
         public void Add()
         { /* ... */ }
+
+
     }
 }
