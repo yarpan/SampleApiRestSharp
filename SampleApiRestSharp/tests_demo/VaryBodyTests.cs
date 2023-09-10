@@ -1,12 +1,11 @@
-﻿using Newtonsoft.Json.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using RestSharp;
 using System;
 
 
 namespace SampleApiRestSharp
 {
-    public class VaryBodyTests : BaseTests
+    public class VaryBodyTests
     {
 
         [Test]
@@ -16,27 +15,29 @@ namespace SampleApiRestSharp
             var client = new RestClient(url);
             var request = new RestRequest();
 
-            const string payload = @"{
+            const string Payload = @"{
                     ""firstName"": ""Nicolle"",
                     ""lastName"": ""Stark"",
                     ""address"": ""56173 Becker Gateway"",
                     ""city"": ""East Mackshire"",
                     ""telephone"": ""485781923""
                 }";
-            request.AddJsonBody(payload);  
+            request.AddJsonBody(Payload);  
 
             var response = client.Post(request);
 
-            Console.WriteLine(response.StatusCode.ToString() + "                " + response.Content.ToString());
-
+            Console.WriteLine(response.StatusCode.ToString() + "\n" + response.Content.ToString());
         }
 
 
-        [Test] public void PostBodyLiteralsTest()   // 'raw strings literals' for C# 7.3 language version 11.0
+        [Test] public void PostBodyLiteralsTest()   
         {
-            //POST the Authentication
-            var authRequest = new RestRequest("/api/Authenticate/Login");
-            //var jsonBody = $$"""
+            string url = "http://localhost:9966/petclinic/api/owners";
+            var client = new RestClient(url);
+            var request = new RestRequest();
+
+            // 'raw strings literals' for C# 7.3 language version 11.0
+            // var payload = $$"""
             //                     {
             //                         "firstName": "Nicolle",
             //                         "lastName": "Stark",
@@ -46,8 +47,15 @@ namespace SampleApiRestSharp
             //                     }
             //                 """;
 
-        }
+            string payload = "{\r\n    \"firstName\": \"Nicolle\",\r\n    \"lastName\": \"Stark\",\r\n    \"address\": \"56173 Becker Gateway\",\r\n    \"city\": \"East Mackshire\",\r\n    \"telephone\": \"485781923\"\r\n}";
 
+            request.AddJsonBody(payload);
+
+            var response = client.Post(request);
+
+            Console.WriteLine(response.StatusCode.ToString() + "\n" + response.Content.ToString());
+
+        }
 
 
         [Test]
@@ -69,9 +77,7 @@ namespace SampleApiRestSharp
 
             var response = client.Post(request);
 
-            Console.WriteLine(response.StatusCode.ToString() + "                " + response.Content.ToString());
-
-            //var request = new RestRequest(resource, Method.Post);
+            Console.WriteLine(response.StatusCode.ToString() + "\n" + response.Content.ToString());
         }
 
 

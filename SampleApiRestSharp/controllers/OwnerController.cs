@@ -1,26 +1,49 @@
-﻿using RestSharp;
+﻿using Newtonsoft.Json;
+using System.Text.Json;
+using RestSharp;
 
 namespace SampleApiRestSharp
 {
-    internal class OwnerController
+    internal class OwnerController : BaseController
     {
 
-        public OwnerDto PostRequest(OwnerDto body)
-        {
-            var client = new RestClient(Endpoints.BaseUri);
-            var request = new RestRequest(Endpoints.EndpointOwners);
-            request.AddJsonBody(body);
-            return client.Post<OwnerDto>(request);
-        }
-
-
-        public OwnerDto GetByIdRequest(int id) 
+        public RestResponse GetByIdRequest(int id)
         {
             var client = new RestClient(Endpoints.BaseUri);
             var request = new RestRequest(Endpoints.EndpointOwners + "/{username}");
             request.AddUrlSegment("username", id);
-            return client.Get<OwnerDto>(request);
-        } 
+            return client.Get(request);
+        }
+
+
+        public RestResponse PostRequest(OwnerDto body)
+        {
+            var client = new RestClient(Endpoints.BaseUri);
+            var request = new RestRequest(Endpoints.EndpointOwners);
+            request.AddJsonBody(body);
+            return client.Post(request);
+        }
+
+
+        public RestResponse PutByIdRequest(OwnerDto body, int id)
+        {
+            var client = new RestClient(Endpoints.BaseUri);
+            var request = new RestRequest(Endpoints.EndpointOwners + "/{username}");
+            request.AddUrlSegment("username", id);
+            request.AddJsonBody(body);
+            return client.Put(request);
+        }
+
+
+
+        public RestResponse DeleteByIdRequest(int id)
+        {
+            var client = new RestClient(Endpoints.BaseUri);
+            var request = new RestRequest(Endpoints.EndpointOwners + "/{username}");
+            request.AddUrlSegment("username", id);
+            return client.Delete(request);
+        }
+
 
 
         public OwnerDto GenerateRandomOwnerDto()

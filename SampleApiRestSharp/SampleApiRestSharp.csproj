@@ -86,13 +86,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\BaseController.cs" />
     <Compile Include="controllers\OwnerController.cs" />
     <Compile Include="data\Endpoints.cs" />
     <Compile Include="models\OwnerDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tests\OwnerTests.cs" />
+    <Compile Include="tests\OwnerCrudTests.cs" />
     <Compile Include="tests\BaseTests.cs" />
-    <Compile Include="tests\VaryBodyTests.cs" />
+    <Compile Include="tests_demo\VaryBodyTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

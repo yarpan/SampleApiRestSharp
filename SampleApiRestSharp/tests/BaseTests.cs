@@ -10,7 +10,7 @@ namespace SampleApiRestSharp
         [SetUp]
         public void Init()
         { /* ... */
-            //test health status
+            //test server's health status
             //get token
 
             
