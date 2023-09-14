@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Text.Json;
 using RestSharp;
+using System;
 
 namespace SampleApiRestSharp
 {
@@ -58,6 +59,15 @@ namespace SampleApiRestSharp
             };
         }
 
+
+
+        public RestResponse getListCustomHeaderRequest(String headerKey, String headerValue)
+        {
+            var client = new RestClient(Endpoints.BaseUri);
+            var request = new RestRequest(Endpoints.EndpointOwners);
+            request.AddHeader(headerKey, headerValue);
+            return client.Get(request);
+        }
 
 
 

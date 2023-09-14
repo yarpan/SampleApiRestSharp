@@ -7,7 +7,6 @@ namespace SampleApiRestSharp
     internal class OwnerCrudTests : BaseTests
     {
 
-
         [Test]
         public void CreateNewOwnerTest()
         {
@@ -113,7 +112,7 @@ namespace SampleApiRestSharp
             var responseGetByIdRaw = ownerController.GetByIdRequest(newCreatedId);
 
          //assert
-            Assert.AreEqual(HttpStatusCode.OK, responseDeleteRaw?.StatusCode);
+            Assert.AreEqual(HttpStatusCode.NoContent, responseDeleteRaw?.StatusCode);
             Assert.AreEqual(HttpStatusCode.NotFound, responseGetByIdRaw?.StatusCode);
         }
 
