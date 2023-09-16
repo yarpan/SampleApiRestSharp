@@ -93,6 +93,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tests\OwnerCrudTests.cs" />
     <Compile Include="tests\BaseTests.cs" />
+    <Compile Include="tests\OwnerBodyValidationTests.cs" />
     <Compile Include="tests\OwnerHeadersTests.cs" />
     <Compile Include="tests_demo\VaryBodyTests.cs" />
   </ItemGroup>
