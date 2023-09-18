@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using Newtonsoft.Json.Linq;
+using NUnit.Framework;
 using RestSharp;
 using System;
 
@@ -27,6 +28,12 @@ namespace SampleApiRestSharp
             var response = client.Post(request);
 
             Console.WriteLine(response.StatusCode.ToString() + "\n" + response.Content.ToString());
+
+            dynamic data = JObject.Parse(response.Content);
+            Console.WriteLine("firstName: " + data.firstName);
+            Console.WriteLine("lastName: " + data.lastName);
+            Console.WriteLine("address: " + data.address);
+
         }
 
 
