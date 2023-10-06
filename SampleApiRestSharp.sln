@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApiRestSharp", "SampleApiRestSharp\SampleApiRestSharp.csproj", "{4433B1F2-D239-4C21-81E4-8EDFEA8242AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApiTest", "SampleApiTest\SampleApiTest.csproj", "{28FE1F70-862D-460E-A0FE-1712CD72B163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetClinicApiTests", "PetClinicApiTests\PetClinicApiTests.csproj", "{3F42DACC-AC4B-4FCE-A876-810B1421B556}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4433B1F2-D239-4C21-81E4-8EDFEA8242AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4433B1F2-D239-4C21-81E4-8EDFEA8242AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4433B1F2-D239-4C21-81E4-8EDFEA8242AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4433B1F2-D239-4C21-81E4-8EDFEA8242AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
