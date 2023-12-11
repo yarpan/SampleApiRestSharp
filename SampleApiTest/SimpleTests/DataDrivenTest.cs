@@ -3,7 +3,7 @@ using NUnit.Framework;
 using RestSharp;
 using System.Net;
 
-namespace SampleApiTest.tests_demo
+namespace SampleApiTest
 {
     [TestFixture]
     public class DataDrivenTests

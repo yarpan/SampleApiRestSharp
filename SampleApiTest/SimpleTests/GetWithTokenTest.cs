@@ -2,9 +2,9 @@
 using NUnit.Framework;
 using RestSharp;
 
-namespace SampleApiRestSharp.tests
+namespace SampleApiTest
 {
-    public class TestWithAuthorization
+    public class GetWithTokenTest
     {
         const string baseUri = "http://localhost:5001";
         const string endpointAuth = "/api/Authenticate/Login";

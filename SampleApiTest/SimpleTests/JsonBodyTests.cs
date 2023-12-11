@@ -4,7 +4,7 @@ using RestSharp;
 using System;
 
 
-namespace SampleApiRestSharp
+namespace SampleApiTest
 {
     public class JsonBodyTests
     {

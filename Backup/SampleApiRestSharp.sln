@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApiTest", "SampleApiTest\SampleApiTest.csproj", "{28FE1F70-862D-460E-A0FE-1712CD72B163}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetClinicApiTests", "PetClinicApiTests\PetClinicApiTests.csproj", "{3F42DACC-AC4B-4FCE-A876-810B1421B556}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28FE1F70-862D-460E-A0FE-1712CD72B163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F42DACC-AC4B-4FCE-A876-810B1421B556}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25797999-0139-40BF-9D47-28CBD1719A9F}
+	EndGlobalSection
+EndGlobal
